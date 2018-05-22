@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+
+data = open('pressure.log', 'r')
+
+timelist = []
+pressurelist = []
+
+for line in data.readlines():
+    line = line.split(' ')
+    #del line[0]
+    print(line)
+    timelist.append(line[2])
+    pressurelist.append(line[1])
+
+del timelist[0]
+del pressurelist[0]
+
+plt.scatter(timelist, pressurelist)
+plt.show()

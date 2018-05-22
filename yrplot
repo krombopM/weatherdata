@@ -1,0 +1,35 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+
+data = open('full_log', 'r')
+
+timelist = []
+templist = []
+rainlist  = []
+windlist = []
+
+
+for line in data.readlines():
+    line = line.split(' ')
+    #del line[0]
+    print(line)
+    templist.append(line[1])
+    rainlist.append(line[2])
+    windlist.append(line[3])
+    timelist.append(line[4])
+
+del timelist[0]
+del templist[0]
+del rainlist[0]
+del windlist[0]
+
+
+
+plt.subplot(1,3,1)
+plt.scatter(timelist,templist)
+plt.subplot(1,3,2)
+plt.scatter(timelist,rainlist)
+plt.subplot(1,3,3)
+plt.scatter(timelist,windlist)
+plt.show()

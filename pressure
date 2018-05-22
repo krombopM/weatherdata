@@ -1,0 +1,42 @@
+import time
+import serial
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+time.sleep(3)
+ser = serial.Serial('/dev/tty.usbmodem1451', 9600)
+
+pressurelist = []
+timelist = [0]
+
+#Time in minutes
+time_interval = 5
+
+while True:
+    try:
+        l = []
+        line = ser.readline()
+        line = str(line)
+        for char in line:
+            if char.isdigit() == True or char == '.':
+                l.append(char)
+        l = ''.join(l)
+        l = float(l)
+        pressurelist.append(l)
+
+        timesum = np.cumsum(timelist)
+        timesum.tolist()
+
+        # Make DataFrame
+        data_list = [pressurelist, timesum]
+        data_list = {'Pressure': pressurelist, 'Time': timesum}
+        df = pd.DataFrame(data_list, columns=['Pressure', 'Time'])
+        print(df)
+        df.to_csv('pressure.log', sep=' ')
+
+        timelist.append(time_interval)
+
+    except KeyboardInterrupt:
+        print('Exiting program..')
+        exit()
