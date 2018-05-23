@@ -37,8 +37,8 @@
 </a>
 </td>, <td class="flag">
 <img alt="" src="/grafikk/ikon/flags/h14/NO.png"/>
-</td>, <td>Korttidsvarsel</td>, <td>22 mai. kl 16:27</td>, <td>innen kl. 0:00</td>, <td>Langtidsvarsel</td>, <td>22 mai. kl 09:44</td>, <td>innen kl. 21:00</td>, <td>
-<abbr title="klokken">kl</abbr> 20–24</td>, <td title="Delvis skyet. Gjelder for: kl 20–24">
+</td>, <td>Korttidsvarsel</td>, <td>22 mai. kl 16:26</td>, <td>innen kl. 0:00</td>, <td>Langtidsvarsel</td>, <td>22 mai. kl 09:41</td>, <td>innen kl. 9:00</td>, <td>
+<abbr title="klokken">kl</abbr> 22–24</td>, <td title="Delvis skyet. Gjelder for: kl 22–24">
 <figure>
 <svg aria-hidden="true" height="38" viewbox="0 0 100 100" width="38" x="0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0">
 <use height="100" width="100" x="0" xlink:href="#s03n" xmlns="" y="0"></use>
@@ -46,8 +46,8 @@
 </svg>
 <figcaption class="yr-visually-hidden">Delvis skyet.</figcaption>
 </figure>
-</td>, <td class="temperature plus" title="Temperatur: 18°.  Følt temperatur 18°.  Gjelder for: kl 20">18°</td>, <td title="Nedbør: 0 mm.  Gjelder for: kl 20–24.  ">0 mm</td>, <td class="txt-left" title="Svak vind, 2 m/s fra sør-sørvest.  Gjelder for: kl 20">
-<img alt="Svak vind, 2 m/s fra sør-sørvest" class="wind" src="/grafikk/sym/vindpiler/32/vindpil.0025.195.png"/>Svak vind, 2 m/s fra sør-sørvest</td>, <td>
+</td>, <td class="temperature plus" title="Temperatur: 16°.  Følt temperatur 16°.  Gjelder for: kl 22">16°</td>, <td title="Nedbør: 0 mm.  Gjelder for: kl 22–24.  ">0 mm</td>, <td class="txt-left" title="Svak vind, 2 m/s fra sørvest.  Gjelder for: kl 22">
+<img alt="Svak vind, 2 m/s fra sørvest" class="wind" src="/grafikk/sym/vindpiler/32/vindpil.0025.220.png"/>Svak vind, 2 m/s fra sørvest</td>, <td>
 <abbr title="klokken">kl</abbr> 0–6</td>, <td title="Delvis skyet. Gjelder for: kl 0–6">
 <figure>
 <svg aria-hidden="true" height="38" viewbox="0 0 100 100" width="38" x="0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0">
@@ -106,7 +106,7 @@
 </svg>
 <figcaption class="yr-visually-hidden">Klarvær.</figcaption>
 </figure>
-</td>, <td class="temperature plus" title="Temperatur: 11°.  Følt temperatur 11°.  Gjelder for: kl 6">11°</td>, <td title="Nedbør: 0 mm.  Gjelder for: kl 6–12.  ">0 mm</td>, <td class="txt-left" title="Lett bris, 5 m/s fra nord.  Gjelder for: kl 6">
+</td>, <td class="temperature plus" title="Temperatur: 12°.  Følt temperatur 12°.  Gjelder for: kl 6">12°</td>, <td title="Nedbør: 0 mm.  Gjelder for: kl 6–12.  ">0 mm</td>, <td class="txt-left" title="Lett bris, 5 m/s fra nord.  Gjelder for: kl 6">
 <img alt="Lett bris, 5 m/s fra nord" class="wind" src="/grafikk/sym/vindpiler/32/vindpil.0050.000.png"/>Lett bris, 5 m/s fra nord</td>, <td>
 <abbr title="klokken">kl</abbr> 12–18</td>, <td title="Klarvær. Gjelder for: kl 12–18">
 <figure>
@@ -116,7 +116,7 @@
 </svg>
 <figcaption class="yr-visually-hidden">Klarvær.</figcaption>
 </figure>
-</td>, <td class="temperature plus" title="Temperatur: 17°.  Følt temperatur 17°.  Gjelder for: kl 12">17°</td>, <td title="Nedbør: 0 mm.  Gjelder for: kl 12–18.  ">0 mm</td>, <td class="txt-left" title="Lett bris, 4 m/s fra øst-nordøst.  Gjelder for: kl 12">
+</td>, <td class="temperature plus" title="Temperatur: 18°.  Følt temperatur 18°.  Gjelder for: kl 12">18°</td>, <td title="Nedbør: 0 mm.  Gjelder for: kl 12–18.  ">0 mm</td>, <td class="txt-left" title="Lett bris, 4 m/s fra øst-nordøst.  Gjelder for: kl 12">
 <img alt="Lett bris, 4 m/s fra øst-nordøst" class="wind" src="/grafikk/sym/vindpiler/32/vindpil.0050.060.png"/>Lett bris, 4 m/s fra øst-nordøst</td>, <td>
 <abbr title="klokken">kl</abbr> 18–24</td>, <td title="Lettskyet. Gjelder for: kl 18–24">
 <figure>
