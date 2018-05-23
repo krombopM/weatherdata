@@ -38,7 +38,7 @@
 </td>, <td class="flag">
 <img alt="" src="/grafikk/ikon/flags/h14/NO.png"/>
 </td>, <td>Korttidsvarsel</td>, <td>23 mai. kl 16:25</td>, <td>innen kl. 0:00</td>, <td>Langtidsvarsel</td>, <td>23 mai. kl 09:44</td>, <td>innen kl. 21:00</td>, <td>
-<abbr title="klokken">kl</abbr> 20–24</td>, <td title="Klarvær. Gjelder for: kl 20–24">
+<abbr title="klokken">kl</abbr> 21–24</td>, <td title="Klarvær. Gjelder for: kl 21–24">
 <figure>
 <svg aria-hidden="true" height="38" viewbox="0 0 100 100" width="38" x="0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0">
 <use height="100" width="100" x="0" xlink:href="#s01n" xmlns="" y="0"></use>
@@ -46,8 +46,8 @@
 </svg>
 <figcaption class="yr-visually-hidden">Klarvær.</figcaption>
 </figure>
-</td>, <td class="temperature plus" title="Temperatur: 17°.  Følt temperatur 17°.  Gjelder for: kl 20">17°</td>, <td title="Nedbør: 0 mm.  Gjelder for: kl 20–24.  ">0 mm</td>, <td class="txt-left" title="Svak vind, 3 m/s fra nord-nordøst.  Gjelder for: kl 20">
-<img alt="Svak vind, 3 m/s fra nord-nordøst" class="wind" src="/grafikk/sym/vindpiler/32/vindpil.0025.025.png"/>Svak vind, 3 m/s fra nord-nordøst</td>, <td>
+</td>, <td class="temperature plus" title="Temperatur: 16°.  Følt temperatur 16°.  Gjelder for: kl 21">16°</td>, <td title="Nedbør: 0 mm.  Gjelder for: kl 21–24.  ">0 mm</td>, <td class="txt-left" title="Lett bris, 4 m/s fra nord.  Gjelder for: kl 21">
+<img alt="Lett bris, 4 m/s fra nord" class="wind" src="/grafikk/sym/vindpiler/32/vindpil.0050.000.png"/>Lett bris, 4 m/s fra nord</td>, <td>
 <abbr title="klokken">kl</abbr> 0–6</td>, <td title="Klarvær. Gjelder for: kl 0–6">
 <figure>
 <svg aria-hidden="true" height="38" viewbox="0 0 100 100" width="38" x="0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0">
@@ -126,7 +126,7 @@
 </svg>
 <figcaption class="yr-visually-hidden">Delvis skyet.</figcaption>
 </figure>
-</td>, <td class="temperature plus" title="Temperatur: 20°.  Følt temperatur 20°.  Gjelder for: kl 18">20°</td>, <td title="Nedbør: 0 mm.  Gjelder for: kl 18–24.  ">0 mm</td>, <td class="txt-left" title="Svak vind, 2 m/s fra sørøst.  Gjelder for: kl 18">
+</td>, <td class="temperature plus" title="Temperatur: 19°.  Følt temperatur 19°.  Gjelder for: kl 18">19°</td>, <td title="Nedbør: 0 mm.  Gjelder for: kl 18–24.  ">0 mm</td>, <td class="txt-left" title="Svak vind, 2 m/s fra sørøst.  Gjelder for: kl 18">
 <img alt="Svak vind, 2 m/s fra sørøst" class="wind" src="/grafikk/sym/vindpiler/32/vindpil.0025.130.png"/>Svak vind, 2 m/s fra sørøst</td>, <td rowspan="2">
 <svg height="38" viewbox="0 0 100 100" width="38" x="0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0">;
   <symbol id="sun"><path class="sun-glow" d="M66.64,47.86,82,41,66.64,34.12l9.84-13.66L59.76,22.22,61.46,5.47l-13.6,9.89L41,0,34.12,15.36,20.46,5.52l1.76,16.72L5.47,20.54l9.89,13.6L0,41l15.36,6.83L5.52,61.54l16.72-1.76L20.54,76.53l13.6-9.89L41,82l6.83-15.36,13.66,9.84L59.78,59.76l16.75,1.69Z" fill="url(#sun-glow-grad)"></path><path class="sun-outer" d="M19.28,53.5a25,25,0,1,0,9.15-34.16A25,25,0,0,0,19.28,53.5Z" fill="#ffd348"></path><path class="sun-inner" d="M22.74,51.5a21,21,0,1,0,7.69-28.69A21,21,0,0,0,22.74,51.5Z" fill="url(#sun-inner-grad)"></path></symbol><defs><radialgradient cx="41" cy="41" gradientunits="userSpaceOnUse" id="sun-glow-grad" r="41"><stop offset="54%" stop-color="#d6b849"></stop><stop offset="67%" stop-color="#ffce47"></stop><stop offset="100%" stop-color="#ffdb73"></stop></radialgradient><lineargradient id="sun-inner-grad" x1="0%" x2="100%" y1="0%" y2="100%"><stop offset="0%" stop-color="#ffaf22"></stop><stop offset="100%" stop-color="#f09900"></stop></lineargradient></defs><symbol id="s01d"><use height="100" transform="translate(9,9) scale(1,1)" width="100" x="0" xlink:href="#sun" y="0"></use></symbol><use height="100" width="100" x="0" xlink:href="#s01d" y="0"></use><image alt="Solsymbol" src="/grafikk/sym/v2017/png/38/01d.png" xmlns=""></image></svg>

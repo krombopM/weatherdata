@@ -6,6 +6,7 @@ import pandas as pd
 
 time.sleep(3)
 ser = serial.Serial('/dev/tty.usbmodem1451', 9600)
+#ttyACM0 on ubuntu
 
 pressurelist = []
 timelist = [0]
@@ -29,11 +30,14 @@ while True:
         timesum.tolist()
 
         # Make DataFrame
+        filename = ('pressure_log', datetime.datetime.now().strftime("%Y%m%d"))
+        filename = str(filename)
+
         data_list = [pressurelist, timesum]
         data_list = {'Pressure': pressurelist, 'Time': timesum}
         df = pd.DataFrame(data_list, columns=['Pressure', 'Time'])
         print(df)
-        df.to_csv('pressure.log', sep=' ')
+        df.to_csv(filename, sep=' ')
 
         timelist.append(time_interval)
 

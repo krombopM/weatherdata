@@ -29,9 +29,10 @@ del windlist[0]
 
 
 plt.subplot(1,3,1)
-plt.scatter(timelist,templist)
+plt.plot(timelist,templist)
 plt.subplot(1,3,2)
-plt.scatter(timelist,rainlist)
+plt.plot(timelist,rainlist)
 plt.subplot(1,3,3)
-plt.scatter(timelist,windlist)
+plt.plot(timelist,windlist)
+plt.gcf().autofmt_xdate()
 plt.show()

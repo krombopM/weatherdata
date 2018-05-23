@@ -1,6 +1,9 @@
 import matplotlib.pyplot as plt
+import datetime
 
-data = open('pressure.log', 'r')
+filename = ('pressure_log', datetime.datetime.now().strftime("%Y%m%d"))
+filename = str(filename)
+data = open(filename, 'r')
 
 timelist = []
 pressurelist = []
