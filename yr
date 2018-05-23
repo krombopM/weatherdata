@@ -3,10 +3,9 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation
 import pandas as pd
 import numpy as np
-
+import datetime
 
 
 def clear_log():            # defines function to clear data log document
@@ -26,6 +25,14 @@ def clear_log():            # defines function to clear data log document
 fig = plt.figure()
 ax1 = fig.add_subplot(1, 1, 1)
 
+
+#Get todays date for use in file name
+now = datetime.datetime.now()
+day = now.day
+month = now.month
+date = (day)
+date = str(date)
+print(date)
 
 t = [0]
 sleeptime = 300
@@ -95,18 +102,20 @@ while True:
         wind_list.append(windspeed)
     #----------------------------------------------------
 
-        timesum = np.cumsum(t)
-        timesum.tolist()
+        #timesum = np.cumsum(t)
+        #timesum.tolist()
 
         #----------------------------------------------------Make DataFrame
-        full_list = [temp_list, rain_list, wind_list, timesum]
-        full_list = {'temp': temp_list, 'Rain': rain_list, 'Wind': wind_list, 'Time': timesum}
+        full_list = [temp_list, rain_list, wind_list, t]
+        full_list = {'temp': temp_list, 'Rain': rain_list, 'Wind': wind_list, 'Time': t}
         df = pd.DataFrame(full_list, columns=['temp', 'Rain', 'Wind', 'Time'])
         print(df)
-        df.to_csv('full_log', sep=' ')
+        filename = ('full_log', datetime.datetime.now().strftime("%Y%m%d"))
+        filename = str(filename)
+        df.to_csv(filename, sep=' ')
     #----------------------------------------------------Plotting
         time.sleep(sleeptime)
-        t.append(sleeptime/60)
+        t.append(datetime.datetime.now().strftime('%H%M'))
 
     except KeyboardInterrupt:
         print('End of Data Collection...')

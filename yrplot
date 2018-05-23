@@ -1,8 +1,11 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+import datetime
 
+filename = ('full_log', datetime.datetime.now().strftime("%Y%m%d"))
+filename = str(filename)
 
-data = open('full_log', 'r')
+data = open(filename, 'r')
 
 timelist = []
 templist = []
@@ -23,7 +26,6 @@ del timelist[0]
 del templist[0]
 del rainlist[0]
 del windlist[0]
-
 
 
 plt.subplot(1,3,1)
