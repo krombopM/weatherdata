@@ -18,5 +18,6 @@ for line in data.readlines():
 del timelist[0]
 del pressurelist[0]
 
-plt.scatter(timelist, pressurelist)
+plt.plot(timelist, pressurelist)
+plt.gcf().autofmt_xdate()
 plt.show()

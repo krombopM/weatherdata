@@ -26,20 +26,20 @@ while True:
         l = float(l)
         pressurelist.append(l)
 
-        timesum = np.cumsum(timelist)
-        timesum.tolist()
+        #timesum = np.cumsum(timelist)
+        #timesum.tolist()
 
         # Make DataFrame
         filename = ('pressure_log', datetime.datetime.now().strftime("%Y%m%d"))
         filename = str(filename)
 
-        data_list = [pressurelist, timesum]
-        data_list = {'Pressure': pressurelist, 'Time': timesum}
+        data_list = [pressurelist, timelist]
+        data_list = {'Pressure': pressurelist, 'Time': timelist}
         df = pd.DataFrame(data_list, columns=['Pressure', 'Time'])
         print(df)
         df.to_csv(filename, sep=' ')
 
-        timelist.append(time_interval)
+        timelist.append(datetime.datetime.now().strftime('%H%M'))
 
     except KeyboardInterrupt:
         print('Exiting program..')
