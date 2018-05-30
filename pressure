@@ -12,7 +12,7 @@ pressurelist = []
 timelist = [0]
 
 #Time in minutes
-time_interval = 5
+time_interval = 1800
 
 while True:
     try:

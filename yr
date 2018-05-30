@@ -36,6 +36,7 @@ print(date)
 t = []
 t.append(datetime.datetime.now().strftime('%H%M'))
 sleeptime = 1800
+print('Sampling time set to: ', sleeptime/60 , 'min')
 temp_list = []
 rain_list = []
 wind_list = []
@@ -107,9 +108,7 @@ while True:
         filename = ('full_log', datetime.datetime.now().strftime("%Y%m%d"))
         filename = str(filename)
         df.to_csv(filename, sep=' ')
-    #Plotting
-        time.sleep(sleeptime)
-        t.append(datetime.datetime.now().strftime('%H%M'))
+
     # Stop the script based on time
         h = datetime.datetime.now().strftime('%H')
         h = int(h)
@@ -129,6 +128,9 @@ while True:
             exit()
         else:
             pass
+        # Plotting
+        time.sleep(sleeptime)
+        t.append(datetime.datetime.now().strftime('%H%M'))
     # End script on keyboard interrupt
     except KeyboardInterrupt:
         print('End of Data Collection...')
