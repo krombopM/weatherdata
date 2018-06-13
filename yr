@@ -35,7 +35,7 @@ print(date)
 # Make lists
 t = []
 t.append(datetime.datetime.now().strftime('%H%M'))
-sleeptime = 1800
+sleeptime = 3600
 print('Sampling time set to: ', sleeptime/60 , 'min')
 temp_list = []
 rain_list = []
