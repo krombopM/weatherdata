@@ -36,7 +36,7 @@ print(date)
 t = []
 t.append(datetime.datetime.now().strftime('%H%M'))
 sleeptime = 3600
-print('Sampling time set to: ', sleeptime/60 , 'min')
+print('Sampling time set to: ', sleeptime/60 , ' min')
 temp_list = []
 rain_list = []
 wind_list = []
@@ -87,19 +87,28 @@ while True:
         temp = int(temp)
         temp_list.append(temp)
     #Get rain
-        rain = data_str[17:19]
-        rain_lv = str(rain[0])
-        rain_unit = str(rain[1])
-        print('Expected Rain: ', rain_lv, rain_unit)
-        rain_list.append(rain_lv)
+        try:
+            rain = data_str[17:19]
+            #print('rain: ', rain)
+            rain_lv = str(rain[0])
+            rain_unit = str(rain[1])
+            print('Expected Rain: ', rain_lv, rain_unit)
+            rain_list.append(rain_lv)
+        except:
+            pass
     #Get Wind
-        wind = data_str[29:33]
-        wind_cat = wind[0].split('=')
-        wind[0] = wind_cat[1]
-        print('Current Wind: ', wind[0], wind[1], wind[2], wind[3])
-        print('--------------------')
-        windspeed = wind[2]
-        wind_list.append(windspeed)
+        try:
+
+            wind = data_str[29:33]
+            #print('wind: ', wind)
+            wind_cat = wind[0].split('=')
+            wind[0] = wind_cat[1]
+            print('Current Wind: ', wind[0], wind[1], wind[2], wind[3])
+            print('--------------------')
+            windspeed = wind[2]
+            wind_list.append(windspeed)
+        except:
+            pass
     #Make DataFrame
         full_list = [temp_list, rain_list, wind_list, t]
         full_list = {'temp': temp_list, 'Rain': rain_list, 'Wind': wind_list, 'Time': t}

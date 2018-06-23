@@ -18,7 +18,9 @@ templist = []
 timelist = [0]
 
 #Time in minutes
-time_interval = 1800
+#time_interval = 1800
+
+print('Sampling time set to: ', sleeptime/60 , ' min')
 
 while True:
     try:
